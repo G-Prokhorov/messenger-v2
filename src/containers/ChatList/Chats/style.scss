@@ -1,0 +1,40 @@
+@use '../../../shared/base.scss';
+
+.chatPreview {
+  height: 90px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  padding: 10px 25px;
+  align-items: center;
+}
+
+.chatPreview:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 17%;
+  width: 66%;
+  border-bottom: base.$border;
+}
+
+.chatPreview .avatar {
+  border-radius: 50%;
+  background-color: #1010a4;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.chatPreview div:nth-child(2) {
+  flex-grow: 1;
+  max-width: 75%;
+}
+
+.chatPreview p {
+  line-height: 2;
+  max-width: 95%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

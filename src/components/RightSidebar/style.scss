@@ -1,0 +1,9 @@
+@use "../../shared/base";
+
+.rightSidebar {
+  grid-column: 3 / 4;
+}
+
+.rightSidebarMain {
+  border-left: base.$border;
+}

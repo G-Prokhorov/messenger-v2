@@ -1,0 +1,32 @@
+#customMessage {
+  box-sizing: border-box;
+  padding: 25px 15px;
+  height: 100%;
+}
+
+#dragDropContext, #customMessage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#dragDropContext {
+  height: 80%;
+  border: 2px solid skyblue;
+
+}
+
+.messageDroppable {
+  height: 50%;
+  min-height: 200px;
+}
+
+.stackDroppable {
+  height: 45%;
+  min-height: 150px;
+}
+
+.draggableElmt {
+  color: #e20770 !important;
+}

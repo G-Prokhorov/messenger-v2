@@ -1,0 +1,10 @@
+@use "../../shared/base";
+
+.leftSidebar {
+  grid-column: 1 / 2;
+}
+
+.leftSidebar:nth-child(2) {
+  border-right: base.$border;
+  position: relative;
+}

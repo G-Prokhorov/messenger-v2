@@ -1,0 +1,25 @@
+@use "../../shared/base";
+
+.styledBth {
+  background-color: base.$pink;
+  border-radius: base.$border-radius;
+  color: base.$font-color;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 60px;
+  font-size: 28px;
+  letter-spacing: 4px;
+  transition: 0.3s ease-in-out;
+  opacity: 0.6;
+}
+
+.styledBth:hover {
+  opacity: 1;
+  letter-spacing: 5px;
+}
+
+.styledBth:active {
+  background-color: base.$blue;
+  letter-spacing: 6px;
+}

@@ -1,0 +1,67 @@
+@use "../shared/base";
+
+/*reset style*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p,
+a, img, ol, ul, li, form, label,table, tbody, tfoot, thead, tr, th, td,
+article, footer, header, nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+footer, header, article, nav {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+/*reset style*/
+
+html {
+  color: rgba(210, 210, 210, 0.8);
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: black;
+  background: url("../img/back.png") no-repeat center center fixed;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 75vw;
+  height: 800px;
+  display: grid;
+  grid-template-rows: 60px 1fr 50px;
+  grid-template-columns: 27% 50% 23%;
+}
+
+
+::-webkit-scrollbar-track {
+  background:transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: base.$border-color;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar {
+  width: 3px !important;
+  height: 0 !important;
+}
